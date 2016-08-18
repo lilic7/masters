@@ -1,0 +1,91 @@
+body {
+  background: #333949;
+  font-family: Arial, Sans-Serif;
+}
+
+.container {
+  padding: 10px;
+}
+header{
+  text-align: center;
+}
+#logo {
+  margin: 0 auto;
+}
+
+.top-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+
+  li {
+    margin: 0;
+    text-align: center;
+    height: 2em;
+    padding-bottom: 5px;
+  }
+  a {
+    color: #7a8090;
+    text-decoration: none;
+    height: 2em;
+    display: block;
+    padding-top: 0.8em;
+  }
+
+  a:hover {
+    background-color: rgb( 5, 5, 5);
+    background-color: rgba( 5, 5, 5, 0.5);
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.section {
+  width: 275px;
+  padding: 15px;
+  margin-bottom: 10px;
+  color: #6a7796;
+  line-height: 1.5em;
+
+  &.title-img {
+    margin: 0 auto;
+  }
+
+  .title {
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.6em;
+    color: #fff;
+    padding-left: 25px;
+
+    &.about {
+      background-image: url("/img/section-about-logo.png");
+    }
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 1.3em;
+  }
+
+}
+
+.btn-link {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  height: 40px;
+  max-width: 150px;
+  text-decoration: none;
+  background-color: #11719f;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #005C9F;
+  }
+}

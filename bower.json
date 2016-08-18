@@ -1,0 +1,21 @@
+{
+  "name": "masters",
+  "authors": [
+    "lilic7 <zubcolilian@mail.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/assets/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^4.2.0"
+  }
+}

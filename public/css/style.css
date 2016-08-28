@@ -5,21 +5,51 @@ body {
   font-size: 14px;
   color: #6a7796; }
 
+h1,
+h2 {
+  color: #fff; }
+
 .top-bar,
 .carousel-block {
   display: none; }
 
-h1,
-h2 {
-  color: #fff;
-  text-align: center; }
-
 .section {
-  background-color: rgba(24, 26, 35, 0.51); }
+  background-color: rgba(24, 26, 35, 0.51);
+  margin-bottom: 10px;
+  min-height: 80px; }
+  .section.contacts {
+    line-height: 1.2em; }
+    .section.contacts .row {
+      margin-bottom: 21px; }
+  .section.social a {
+    margin-right: 3%; }
 
 .section-title {
   background-image: url("../img/section-head-bg.png");
-  background-repeat: repeat-x; }
+  background-repeat: repeat-x;
+  height: 46px; }
+  .section-title h1 {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-size: 1.8em;
+    line-height: 2em;
+    padding-left: 45px; }
+    .section-title h1.about {
+      background-image: url("../img/section-about-logo.png"); }
+    .section-title h1.blog {
+      background-image: url("../img/section-blog-logo.png"); }
+    .section-title h1.contacts {
+      background-image: url("../img/section-contacts-logo.png"); }
+
+.section-content {
+  padding: 20px; }
+  .section-content h2 {
+    font-size: 1.4em; }
+  .section-content strong {
+    color: #fff; }
+
+.section-thumbnail {
+  width: 100%; }
 
 .btn-section {
   background-color: #11719f;
@@ -30,11 +60,46 @@ h2 {
 .btn-section:hover {
   color: #fff; }
 
+.footer-info {
+  background-color: #0f131f;
+  min-height: 100px;
+  margin-top: 20px;
+  border-bottom: 1px solid #000;
+  color: #fff; }
+  .footer-info h1 {
+    color: #8c94ac;
+    font-size: 1.4em; }
+
+.footer-main {
+  background-color: #000;
+  height: 60px;
+  font-size: 0.875em;
+  line-height: 60px;
+  border-top: 1px solid #0f131f; }
+
 @media screen and (min-width: 995px) {
   body {
     background: url("../img/bgr.png"); }
   .container {
-    width: 950px; }
+    width: 970px; }
+  .navbar ul {
+    margin-top: 20px; }
+    .navbar ul li {
+      overflow: hidden; }
+      .navbar ul li:first-child {
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px; }
+      .navbar ul li:last-child {
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px; }
+    .navbar ul a {
+      color: #7a8090;
+      font-size: 1.2em;
+      font-weight: 600;
+      display: block; }
+    .navbar ul a:hover {
+      color: #fff;
+      background-color: rgba(24, 26, 35, 0.51); }
   .carousel-block {
     display: block;
     padding-top: 25px;
@@ -89,4 +154,7 @@ h2 {
         width: 85%; }
       .top-bar .search-form button {
         width: 15%;
-        float: right; } }
+        float: right; }
+  .main-content {
+    background-color: rgba(24, 26, 35, 0.51);
+    padding: 20px; } }

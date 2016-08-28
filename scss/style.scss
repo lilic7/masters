@@ -6,24 +6,75 @@ body {
   font-size: 14px;
   color: #6a7796;
 }
+
+h1,
+h2 {
+  color: #fff;
+}
+
 .top-bar,
 .carousel-block{
   display: none;
 }
 
-h1,
-h2 {
-  color: #fff;
-  text-align: center;
-}
-
 .section {
   background-color: rgba(24, 26, 35, 0.51);
+  margin-bottom: 10px;
+  min-height: 80px;
+
+  &.contacts{
+    line-height: 1.2em;
+
+    .row{
+      margin-bottom: 21px;
+    }
+  }
+
+  &.social {
+    a{
+      margin-right: 3%;
+    }
+  }
 }
 
 .section-title{
   background-image: url("../img/section-head-bg.png");
   background-repeat: repeat-x;
+  height: 46px;
+
+  h1{
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-size: 1.8em;
+    line-height: 2em;
+    padding-left: 45px;
+
+    &.about{
+      background-image: url("../img/section-about-logo.png");
+    }
+    &.blog{
+      background-image: url("../img/section-blog-logo.png");
+    }
+    &.contacts{
+      background-image: url("../img/section-contacts-logo.png");
+    }
+  }
+}
+
+.section-content {
+  padding: 20px;
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  strong{
+    color: #fff
+  }
+}
+
+.section-thumbnail {
+  width: 100%;
 }
 
 .btn-section{
@@ -36,19 +87,69 @@ h2 {
 .btn-section:hover{
   color: #fff;
 }
-//
-//.section-img {
-//  width: 100%;
-//  background-color: #191f2f;
-//  border: 1px solid #252c3e;
-//}
+
+
+.footer-info {
+  background-color: #0f131f;
+  min-height: 100px;
+  margin-top: 20px;
+  border-bottom: 1px solid #000;
+  color: #fff;
+
+  h1{
+    color: #8c94ac;
+    font-size: 1.4em;
+  }
+}
+.footer-main {
+  background-color: #000;
+  height: 60px;
+  font-size: 0.875em;
+  line-height: 60px;
+  border-top: 1px solid #0f131f;
+}
+
 
 @media screen and (min-width: 995px){
   body {
     background: url("../img/bgr.png");
   }
+
+
   .container{
-    width: 950px;
+    width: 970px;
+  }
+
+  .navbar {
+    ul{
+      margin-top: 20px;
+
+      li{
+        overflow: hidden;
+
+        &:first-child{
+          border-bottom-left-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+
+        &:last-child{
+          border-bottom-right-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+      }
+
+      a{
+        color: #7a8090;
+        font-size: 1.2em;
+        font-weight: 600;
+        display: block;
+      }
+      
+      a:hover{
+        color: #fff;
+        background-color: rgba(24, 26, 35, 0.51);
+      }
+    }
   }
 
   .carousel-block{
@@ -134,5 +235,10 @@ h2 {
         float: right;
       }
     }
+  }
+
+  .main-content {
+    background-color: rgba(24, 26, 35, 0.51);
+    padding: 20px;
   }
 }

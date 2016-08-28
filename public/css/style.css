@@ -5,7 +5,8 @@ body {
   font-size: 14px;
   color: #6a7796; }
 
-.top-bar {
+.top-bar,
+.carousel-block {
   display: none; }
 
 h1,
@@ -13,9 +14,43 @@ h2 {
   color: #fff;
   text-align: center; }
 
+.section {
+  background-color: rgba(24, 26, 35, 0.51); }
+
+.section-title {
+  background-image: url("../img/section-head-bg.png");
+  background-repeat: repeat-x; }
+
+.btn-section {
+  background-color: #11719f;
+  border-color: #11719f;
+  border-radius: 0 !important;
+  color: #fff; }
+
+.btn-section:hover {
+  color: #fff; }
+
 @media screen and (min-width: 995px) {
   body {
     background: url("../img/bgr.png"); }
+  .container {
+    width: 950px; }
+  .carousel-block {
+    display: block;
+    padding-top: 25px;
+    margin-bottom: 45px; }
+    .carousel-block img {
+      padding: 10px;
+      background-color: #fff;
+      width: 100%; }
+    .carousel-block li {
+      background-color: #fff;
+      border-color: #fff; }
+    .carousel-block li.active {
+      background-color: #3f92bf;
+      border-color: #3f92bf; }
+    .carousel-block .carousel-indicators {
+      bottom: -10% !important; }
   .top-bar {
     display: block;
     background-image: url("../img/header-bg.png");

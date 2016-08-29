@@ -1,10 +1,12 @@
+$main-font-color: #6a7796;
+
 /* --- ELEMENT STYLES --- */
 
 body {
   background: #333949;
   font-family: Arial, Sans-Serif;
   font-size: 14px;
-  color: #6a7796;
+  color: $main-font-color;
 }
 
 h1,
@@ -31,8 +33,13 @@ h2 {
   }
 
   &.social {
+    text-align: center;
+    img {
+      width: 40px;
+    }
     a{
-      margin-right: 3%;
+      display: inline-block;
+      margin: 10px;
     }
   }
 }
@@ -44,10 +51,11 @@ h2 {
 
   h1{
     background-repeat: no-repeat;
-    background-position: 10px center;
-    font-size: 1.8em;
-    line-height: 2em;
+    background-position: 10px 12px;
+    font-size: 1.25em;
+    line-height: 2.7em;
     padding-left: 45px;
+    word-break: normal;
 
     &.about{
       background-image: url("../img/section-about-logo.png");
@@ -65,7 +73,7 @@ h2 {
   padding: 20px;
 
   h2 {
-    font-size: 1.4em;
+    font-size: 1.125em;
   }
 
   strong{
@@ -82,6 +90,7 @@ h2 {
   border-color: #11719f;
   border-radius: 0 !important;
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .btn-section:hover{
@@ -100,6 +109,48 @@ h2 {
     color: #8c94ac;
     font-size: 1.4em;
   }
+  
+  a{
+    color: #606574;
+  }
+
+
+  .from-gallery{
+    img{
+      background-color: #191f2f;
+      padding: 4px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #252c3e;
+    }
+  }
+
+  .twitter-update{
+    color: #417893;
+    background-color: rgba(117, 136, 187, 0.09);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    span,
+    a {
+      color: #b8e2f6;
+    }
+
+    small {
+      color: #305465;
+    }
+  }
+  
+  .twitter-bird {
+    background-image: url("../img/twitter-bird-says.png");
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 37px;
+    position: absolute;
+    top: -37px;
+    right: 15px;
+  }
 }
 .footer-main {
   background-color: #000;
@@ -107,12 +158,66 @@ h2 {
   font-size: 0.875em;
   line-height: 60px;
   border-top: 1px solid #0f131f;
+  overflow: hidden;
+
+  ul {
+    float: right;
+    li{
+      display: inline-block;
+
+      a{
+        color: $main-font-color;
+        padding: 0 10px;
+        border-right: 1px solid $main-font-color;
+      }
+    }
+
+    li:last-child a{
+      border: 0;
+    }
+  }
 }
 
 
-@media screen and (min-width: 995px){
+.top-menu {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  ul{
+    margin-top: 20px;
+    a{
+      color: #7a8090;
+      font-size: 1.2em;
+      font-weight: 600;
+      display: block;
+    }
+
+    a:hover{
+      color: #fff;
+      background-color: rgba(24, 26, 35, 0.9);
+    }
+  }
+}
+
+
+//MEDIA QUERIES
+
+
+@media (min-width: 768px){
   body {
     background: url("../img/bgr.png");
+  }
+
+  .section {
+    &.social {
+      text-align: center;
+      img {
+        width: auto;
+      }
+      a{
+        display: inline-block;
+        margin: 3px;
+      }
+    }
   }
 
 
@@ -120,7 +225,9 @@ h2 {
     width: 970px;
   }
 
-  .navbar {
+  .top-menu {
+    background-color: transparent !important;
+    border-color: transparent !important;
     ul{
       margin-top: 20px;
 
@@ -147,7 +254,7 @@ h2 {
       
       a:hover{
         color: #fff;
-        background-color: rgba(24, 26, 35, 0.51);
+        background-color: rgba(24, 26, 35, 0.9);
       }
     }
   }

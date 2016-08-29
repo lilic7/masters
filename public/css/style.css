@@ -21,8 +21,13 @@ h2 {
     line-height: 1.2em; }
     .section.contacts .row {
       margin-bottom: 21px; }
-  .section.social a {
-    margin-right: 3%; }
+  .section.social {
+    text-align: center; }
+    .section.social img {
+      width: 40px; }
+    .section.social a {
+      display: inline-block;
+      margin: 10px; }
 
 .section-title {
   background-image: url("../img/section-head-bg.png");
@@ -30,10 +35,11 @@ h2 {
   height: 46px; }
   .section-title h1 {
     background-repeat: no-repeat;
-    background-position: 10px center;
-    font-size: 1.8em;
-    line-height: 2em;
-    padding-left: 45px; }
+    background-position: 10px 12px;
+    font-size: 1.25em;
+    line-height: 2.7em;
+    padding-left: 45px;
+    word-break: normal; }
     .section-title h1.about {
       background-image: url("../img/section-about-logo.png"); }
     .section-title h1.blog {
@@ -44,7 +50,7 @@ h2 {
 .section-content {
   padding: 20px; }
   .section-content h2 {
-    font-size: 1.4em; }
+    font-size: 1.125em; }
   .section-content strong {
     color: #fff; }
 
@@ -55,7 +61,8 @@ h2 {
   background-color: #11719f;
   border-color: #11719f;
   border-radius: 0 !important;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 10px; }
 
 .btn-section:hover {
   color: #fff; }
@@ -69,37 +76,100 @@ h2 {
   .footer-info h1 {
     color: #8c94ac;
     font-size: 1.4em; }
+  .footer-info a {
+    color: #606574; }
+  .footer-info .from-gallery img {
+    background-color: #191f2f;
+    padding: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #252c3e; }
+  .footer-info .twitter-update {
+    color: #417893;
+    background-color: rgba(117, 136, 187, 0.09);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    position: relative; }
+    .footer-info .twitter-update span,
+    .footer-info .twitter-update a {
+      color: #b8e2f6; }
+    .footer-info .twitter-update small {
+      color: #305465; }
+  .footer-info .twitter-bird {
+    background-image: url("../img/twitter-bird-says.png");
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 37px;
+    position: absolute;
+    top: -37px;
+    right: 15px; }
 
 .footer-main {
   background-color: #000;
   height: 60px;
   font-size: 0.875em;
   line-height: 60px;
-  border-top: 1px solid #0f131f; }
+  border-top: 1px solid #0f131f;
+  overflow: hidden; }
+  .footer-main ul {
+    float: right; }
+    .footer-main ul li {
+      display: inline-block; }
+      .footer-main ul li a {
+        color: #6a7796;
+        padding: 0 10px;
+        border-right: 1px solid #6a7796; }
+    .footer-main ul li:last-child a {
+      border: 0; }
 
-@media screen and (min-width: 995px) {
-  body {
-    background: url("../img/bgr.png"); }
-  .container {
-    width: 970px; }
-  .navbar ul {
+.top-menu {
+  background-color: transparent !important;
+  border-color: transparent !important; }
+  .top-menu ul {
     margin-top: 20px; }
-    .navbar ul li {
-      overflow: hidden; }
-      .navbar ul li:first-child {
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px; }
-      .navbar ul li:last-child {
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px; }
-    .navbar ul a {
+    .top-menu ul a {
       color: #7a8090;
       font-size: 1.2em;
       font-weight: 600;
       display: block; }
-    .navbar ul a:hover {
+    .top-menu ul a:hover {
       color: #fff;
-      background-color: rgba(24, 26, 35, 0.51); }
+      background-color: rgba(24, 26, 35, 0.9); }
+
+@media (min-width: 768px) {
+  body {
+    background: url("../img/bgr.png"); }
+  .section.social {
+    text-align: center; }
+    .section.social img {
+      width: auto; }
+    .section.social a {
+      display: inline-block;
+      margin: 3px; }
+  .container {
+    width: 970px; }
+  .top-menu {
+    background-color: transparent !important;
+    border-color: transparent !important; }
+    .top-menu ul {
+      margin-top: 20px; }
+      .top-menu ul li {
+        overflow: hidden; }
+        .top-menu ul li:first-child {
+          border-bottom-left-radius: 10px;
+          border-top-left-radius: 10px; }
+        .top-menu ul li:last-child {
+          border-bottom-right-radius: 10px;
+          border-top-right-radius: 10px; }
+      .top-menu ul a {
+        color: #7a8090;
+        font-size: 1.2em;
+        font-weight: 600;
+        display: block; }
+      .top-menu ul a:hover {
+        color: #fff;
+        background-color: rgba(24, 26, 35, 0.9); }
   .carousel-block {
     display: block;
     padding-top: 25px;
